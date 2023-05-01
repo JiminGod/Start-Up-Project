@@ -1,23 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './Header.css';
 import logo from '../img/logo.png'
 
 class Header extends React.Component {
     render() {
         return(
-            <header>
-                <Link to="/"><img src={logo} alt="Logo" /></Link>
+            <header id="header">
                 <nav>
-                    <ul>
-                        <li>
-                            <Link to="/MyComponent">1</Link>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
+                    <Link to="/" className="logo"><img src={logo} alt="Logo" style={{width:"70px", position:"fixed"}}/></Link>
+                    <ul className="lists">
+                        <li><Link to="/">태그1</Link></li>
+                        <li><Link to="/">태그2</Link></li>
+                        <li><Link to="/MyComponent">대화하러가기</Link></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                     </ul>
                 </nav>
             </header>

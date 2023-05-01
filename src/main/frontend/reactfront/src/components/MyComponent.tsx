@@ -15,7 +15,7 @@ async function query(data: any) {
     return result;
 }
 
-const MyComponent=()=> {
+const MyComponent = () => {
     const [chatLog, setChatLog] = useState<any>([]);
     const [inputText, setInputText] = useState<string>("");
 

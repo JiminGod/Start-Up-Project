@@ -1,0 +1,16 @@
+body {
+    margin : 0;
+    overflow-y : hidden;
+}
+
+.inner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.bg-2 {
+    background-color: #61dafb;
+}
