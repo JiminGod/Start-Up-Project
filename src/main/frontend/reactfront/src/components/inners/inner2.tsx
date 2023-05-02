@@ -2,8 +2,7 @@ import React from "react";
 import "./inner2.css"
 import exp from "constants";
 
-class inner2 extends React.Component {
-    render() {
+const inner2 = () => {
         return (
             <div>
                 <div className="inner bg-2">
@@ -11,7 +10,6 @@ class inner2 extends React.Component {
                 </div>
             </div>
         );
-    }
 }
 
 export default inner2

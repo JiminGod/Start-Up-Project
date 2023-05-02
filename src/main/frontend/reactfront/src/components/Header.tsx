@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import './Header.css';
 import logo from '../img/logo.png'
 
-class Header extends React.Component {
-    render() {
+const Header = () => {
         return(
             <header id="header">
                 <nav>
@@ -18,7 +17,6 @@ class Header extends React.Component {
                 </nav>
             </header>
         )
-    }
 }
 
 export default Header
