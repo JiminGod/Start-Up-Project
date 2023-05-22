@@ -1,0 +1,38 @@
+body {
+    margin : 0;
+    overflow-y : hidden;
+}
+
+.sitefunc{
+    height: 100vh;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nanum Gothic";
+}
+
+.site1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #9ef7d1;
+    transform: translate3d(-525px, 200px, 50px);
+}
+
+.site2 {
+    transform: translate3d(-300px, 230px, 50px);
+    text-align: left;
+    font-size: 23px;
+}
+
+.bg-3 {
+    background-color: white;
+}
+
+.chatpic {
+    width: 500px;
+    object-fit: cover;
+}
+
+.sitepic {
+    transform: translate3d(300px, -150px, 50px);
+}

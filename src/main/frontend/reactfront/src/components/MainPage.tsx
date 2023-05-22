@@ -1,19 +1,20 @@
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import Header from './Header';
 import Footer from './Footer';
 import './MainPage.css';
-import Inner1 from "./inners/inner1";
-import Inner2 from "./inners/inner2";
-import Inner3 from "./inners/inner3";
-
+import Simple from "./inners/Simple";
+import Detail from "./inners/Detail";
+import Sitefunc from "./inners/Sitefunc";
+import Profilechara from "./inners/Profilechara";
 const MainPage = () =>  {
-        return(
+    return(
             <div>
                 <Header/>
                 <div className="outer">
-                    <Inner1/>
-                    <Inner2/>
-                    <Inner3/>
+                    <Simple/>
+                    <Detail/>
+                    <Sitefunc/>
+                    <Profilechara/>
                 </div>
                 <Footer/>
             </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Header from "../components/Header";
 
 async function query(data: any) {
     const response = await fetch(
@@ -73,6 +74,7 @@ const MyComponent = () => {
 
     return (
         <div>
+            <Header/>
             <div style={{ height: "500px", overflowY: "scroll" }}>
                 {chatLog.map((log: any, index: number) => (
                     <div key={index} style={{ textAlign: log.isUser ? "right" : "left" }}>
