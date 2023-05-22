@@ -6,6 +6,7 @@ import Simple from "./inners/Simple";
 import Detail from "./inners/Detail";
 import Sitefunc from "./inners/Sitefunc";
 import Profilechara from "./inners/Profilechara";
+import Boardguide from "./inners/Boardguide";
 const MainPage = () =>  {
     return(
             <div>
@@ -15,6 +16,7 @@ const MainPage = () =>  {
                     <Detail/>
                     <Sitefunc/>
                     <Profilechara/>
+                    <Boardguide/>
                 </div>
                 <Footer/>
             </div>

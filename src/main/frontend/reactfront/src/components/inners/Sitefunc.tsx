@@ -17,7 +17,7 @@ const sitefunc = () => {
                         그 후, Hugging Face 플랫폼을 통해      <br/>
                         데이터 모델들을 api로 만듭니다.  <br/>
                         그렇게 챗 봇들을 MAF 사이트로 불러와 <br/>
-                        페이지 이용자들과 대화할 수 있도록 하였습니다. <br/>
+                        이용자 여러분들과 대화할 수 있도록 만들었습니다. <br/>
                         </Fade>
                 </div>
                 <div className="sitepic">

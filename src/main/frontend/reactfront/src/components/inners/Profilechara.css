@@ -5,10 +5,77 @@ body {
 }
 
 .profile{
-    height: 100vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #e9e9e9;
     font-family: "Nanum Gothic";
+}
+
+.paimon{
+    width: 150px;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 5px #495057);
+}
+
+.human2{
+    width: 150px;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 5px #495057);
+}
+.human3{
+    width: 150px;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 5px #495057);
+}
+.human4{
+    width: 150px;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 5px #495057);
+}
+
+.intro{
+    transform: translate3d(-100px, -380px, 50px);
+    font-size: 20px;
+    font-weight: bold;
+    color: #83DCB7;
+    -webkit-text-stroke: 0.1px #4fd1c5;
+}
+
+.pro1 {
+    transform: translate3d(-240px, -250px, 50px);
+}
+
+.pro2 {
+    transform: translate3d(-230px, -250px, 50px);
+}
+
+.pro3 {
+    transform: translate3d(650px, -90px, 50px);
+}
+
+.pro4 {
+    transform: translate3d(400px, -90px, 50px);
+}
+
+.pro5 {
+    transform: translate3d(-720px, 100px, 50px);
+}
+
+.pro6 {
+    transform: translate3d(-710px, 100px, 50px);
+}
+
+.pro7 {
+    transform: translate3d(185px, 250px, 50px);
+}
+
+.pro8 {
+    transform: translate3d(-80px, 250px, 50px);
+}
+
+.probutton {
+    border: none;
+    background-color: #e9e9e9;
 }
