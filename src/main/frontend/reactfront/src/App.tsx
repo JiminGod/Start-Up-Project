@@ -1,8 +1,8 @@
 import React from 'react';
 import MainPage from "./components/MainPage";
-import MyComponent from "./components/MyComponent";
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Paimon from "../src/chatting/Paimon";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           <BrowserRouter basename="/">
               <Routes>
                   <Route path="/" element={<MainPage/>}></Route>
-                  <Route path="/MyComponent" element={<MyComponent/>}></Route>
+                  <Route path="/paimon" element={<Paimon/>}></Route>
               </Routes>
           </BrowserRouter>
       </div>
