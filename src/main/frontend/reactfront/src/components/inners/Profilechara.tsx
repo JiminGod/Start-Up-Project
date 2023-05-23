@@ -5,8 +5,6 @@ import human2 from "../../img/human2.png"
 import human3 from "../../img/human3.png"
 import human4 from "../../img/human4.png"
 import Modal from "../../hooks/modal";
-//@ts-ignore
-import Fade from "react-reveal/Fade";
 const Profilechara = () => {
 
     const [modalOpen1, setModalOpen1] = useState(false);
@@ -46,7 +44,6 @@ const Profilechara = () => {
     };
 
     return(
-        <Fade>
         <div className="profile">
             <div className="intro">
                 ♠︎캐릭터 프로필
@@ -89,7 +86,6 @@ const Profilechara = () => {
                 테스트4
             </Modal>
         </div>
-        </Fade>
     )
 }
 
