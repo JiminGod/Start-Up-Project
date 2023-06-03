@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Paimon.css";
+import "./Shrek.css";
 import ChattingHeader from "../sidebar/ChattingHeader";
+
 interface ChatLog {
     isUser: boolean;
     text: string;
 }
 
-const Paimon = () => {
+const Shrek = () => {
     const [chatLog, setChatLog] = useState<ChatLog[]>([]);
     const [inputText, setInputText] = useState<string>("");
     const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -27,29 +28,27 @@ const Paimon = () => {
         setLoadingDots("");
         setShowReloadMessage(false);
 
-        const result = await fetch("https://api-inference.huggingface.co/models/Inhaexpress/DialoGPT-medium-paimon", {
-            headers: {
-                Authorization: "Bearer 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",
-            },
-            method: "POST",
-            body: JSON.stringify({
-                inputs: {
-                    past_user_inputs: chatLog.filter((log) => log.isUser).map((log) => log.text),
-                    generated_responses: chatLog.filter((log) => !log.isUser).map((log) => log.text),
-                    text: inputText,
+        const result = await fetch(
+            "https://api-inference.huggingface.co/models/Inhaexpress/DialoGPT-medium-shrek124",
+            {
+                headers: {
+                    Authorization: "Bearer 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",
                 },
-            }),
-        });
+                method: "POST",
+                body: JSON.stringify({
+                    inputs: {
+                        past_user_inputs: chatLog.filter((log) => log.isUser).map((log) => log.text),
+                        generated_responses: chatLog.filter((log) => !log.isUser).map((log) => log.text),
+                        text: inputText,
+                    },
+                }),
+            }
+        );
 
         const resultJSON = await result.json();
         const generatedText = resultJSON.generated_text;
 
-        const numExclamationMarks = (generatedText.match(/!/g) || []).length;
-        if (numExclamationMarks > 10) {
-            setShowReloadMessage(true);
-        }
-
-        if (generatedText.trim() !== "") {
+        if (generatedText && generatedText.trim() !== "") {
             setChatLog((prevChatLog) => [
                 ...prevChatLog,
                 {
@@ -128,21 +127,20 @@ const Paimon = () => {
         };
     }, [isLoading]);
 
-
     return (
         <div>
             <ChattingHeader/>
-            <div className="container">
-                <div className="background-layer">
-                    <div className="history" ref={historyRef}>
+            <div className="shrek-container">
+                <div className="shrek-background-layer">
+                    <div className="shrek-history" ref={historyRef}>
                         {chatLog.map((log, index) => (
                             <div
                                 key={index}
-                                className={`chat-log ${log.isUser ? "user-chat-log" : ""}`}
+                                className={`shrek-chat-log ${log.isUser ? "shrek-user-chat-log" : ""}`}
                             >
                                 <div
-                                    className={`chat-bubble ${
-                                        log.isUser ? "user-bubble" : "paimon-bubble"
+                                    className={`shrek-chat-bubble ${
+                                        log.isUser ? "shrek-user-bubble" : "shrek-shrek-bubble"
                                     }`}
                                 >
                                     {log.isUser ? (
@@ -150,18 +148,18 @@ const Paimon = () => {
                                             <img
                                                 src="https://i.imgur.com/nuBXd5R.png"
                                                 alt="You"
-                                                className="paimon-icon"
+                                                className="shrek-icon"
                                             />
                                             You:{" "}
                                         </>
                                     ) : (
                                         <>
                                             <img
-                                                src="https://i.imgur.com/c2PeptH.png"
-                                                alt="Paimon"
-                                                className="paimon-icon"
+                                                src="https://i.imgur.com/4qDY7Lb.png"
+                                                alt="Shrek"
+                                                className="shrek-icon"
                                             />
-                                            {log.text && log.text.trim() !== "" ? "Paimon: " : ""}
+                                            {log.text && log.text.trim() !== "" ? "Shrek: " : ""}
                                         </>
                                     )}
                                     {log.text}
@@ -169,21 +167,21 @@ const Paimon = () => {
                             </div>
                         ))}
                         {isLoading && (
-                            <div className="loading-message">
-                                {showReloadMessage ? "페이지를 새로고침 하세요" : "Paimon이 생각 중입니다"}
+                            <div className="shrek-loading-message">
+                                {showReloadMessage ? "페이지를 새로고침 하세요" : "Shrek이 생각 중입니다"}
                                 {loadingDots}
                             </div>
                         )}
                     </div>
-                    <form onSubmit={handleInputSubmit} className="input-container">
+                    <form onSubmit={handleInputSubmit} className="shrek-input-container">
                         <input
                             type="text"
                             value={inputText}
                             onChange={handleInputChange}
-                            className="input-text"
+                            className="shrek-input-text"
                             placeholder="메시지를 영어로 입력하세요..."
                         />
-                        <button type="submit" className="input-button">
+                        <button type="submit" className="shrek-input-button">
                             전송
                         </button>
                     </form>
@@ -193,4 +191,4 @@ const Paimon = () => {
     );
 };
 
-export default Paimon;
+export default Shrek;

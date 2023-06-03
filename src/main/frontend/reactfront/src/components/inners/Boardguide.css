@@ -18,18 +18,24 @@ body {
 }
 
 .boardpic {
-    transform: translate3d(30px, -40px, 50px);
+    position: relative;
+    bottom: 50px;
+    left: 50px;
 }
 
 .guidetitle {
-    transform: translate3d(-500px, -300px, 50px);
+    position: relative;
+    bottom: 300px;
+    right: 500px;
     font-weight: bold;
     font-size: 20px;
     color: #9ef7d1;
 }
 
 .guidecontent {
-    transform: translate3d(-70px, -40px, 0px);
+    position: relative;
+    bottom: 30px;
+    right: 60px;
     text-align: left;
     font-size: 23px;
 }

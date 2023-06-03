@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./Simple.css"
 import {Link} from "react-router-dom";
 import useInterval from "../../hooks/useInterval";
-import Paimon from "../../chatting/Paimon"
+
 const Simple = () => {
     const completedTitle = "다양한 미디어의 캐릭터들과 대화해 보세요!";
     const [landingTitle, setLandingTtile] = useState("");
@@ -31,7 +31,7 @@ const Simple = () => {
                         {landingTitle}
                         <br/><br/><br/>
                         <button className="w-btn-neon2" type="button">
-                            <Link to="/Paimon">대화하러가기</Link>
+                            <Link to="/Terra">대화하러가기</Link>
                         </button>
                     </div>
                 </div>

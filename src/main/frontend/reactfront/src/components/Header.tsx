@@ -11,7 +11,7 @@ const Header = () => {
                     <ul className="lists">
                         <li><Link to="/">문의</Link></li>
                         <li> | </li>
-                        <li><Link to="/Paimon">대화</Link></li>
+                        <li><Link to="/Terra">채팅</Link></li>
                         <li>&nbsp;&nbsp;&nbsp;</li>
                     </ul>
                 </nav>

@@ -5,7 +5,7 @@ body {
 }
 
 .profile{
-    height: 110vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,24 +19,26 @@ body {
     filter: drop-shadow(5px 5px 5px #495057);
 }
 
-.human2{
+.harry{
     width: 150px;
     object-fit: cover;
     filter: drop-shadow(5px 5px 5px #495057);
 }
-.human3{
+.shrek{
     width: 150px;
     object-fit: cover;
     filter: drop-shadow(5px 5px 5px #495057);
 }
-.human4{
+.terra{
     width: 150px;
     object-fit: cover;
     filter: drop-shadow(5px 5px 5px #495057);
 }
 
 .intro{
-    transform: translate3d(-100px, -380px, 50px);
+    position: relative;
+    bottom: 335px;
+    right: 30px;
     font-size: 20px;
     font-weight: bold;
     color: #83DCB7;
@@ -44,35 +46,51 @@ body {
 }
 
 .pro1 {
-    transform: translate3d(-240px, -250px, 50px);
+    position: relative;
+    top: -170px;
+    right: 160px;
 }
 
 .pro2 {
-    transform: translate3d(-230px, -250px, 50px);
+    position: relative;
+    top: -150px;
+    right: 120px;
 }
 
 .pro3 {
-    transform: translate3d(650px, -90px, 50px);
+    position: relative;
+    top: -170px;
+    left: 700px;
 }
 
 .pro4 {
-    transform: translate3d(400px, -90px, 50px);
+    position: relative;
+    top: -150px;
+    left: 380px;
 }
 
 .pro5 {
-    transform: translate3d(-720px, 100px, 50px);
+    position: relative;
+    top: 100px;
+    right: 733px;
 }
 
 .pro6 {
-    transform: translate3d(-710px, 100px, 50px);
+    position: relative;
+    top: 120px;
+    right: 690px;
 }
 
 .pro7 {
-    transform: translate3d(185px, 250px, 50px);
+    position: relative;
+    top: 100px;
+    left: 90px;
 }
 
 .pro8 {
-    transform: translate3d(-80px, 250px, 50px);
+    position: relative;
+    top: 120px;
+    right: 200px;
 }
 
 .probutton {
