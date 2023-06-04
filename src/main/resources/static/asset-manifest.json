@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed823d6f.css",
-    "main.js": "/static/js/main.f37660f3.js",
+    "main.css": "/static/css/main.85764437.css",
+    "main.js": "/static/js/main.82ddc4f9.js",
     "static/js/787.0451fb7f.chunk.js": "/static/js/787.0451fb7f.chunk.js",
     "static/media/board.png": "/static/media/board.b9444c3b9a36f4be043e.png",
     "static/media/chatting.gif": "/static/media/chatting.ffcb6849da5ce9b348c5.gif",
-    "static/media/human2.png": "/static/media/human2.6a9c7bcf3926a737cf07.png",
-    "static/media/human3.png": "/static/media/human3.6a9c7bcf3926a737cf07.png",
-    "static/media/human4.png": "/static/media/human4.6a9c7bcf3926a737cf07.png",
+    "static/media/Shrek.png": "/static/media/Shrek.e75a8d3760a56050aeb2.png",
+    "static/media/ShrekProfile.png": "/static/media/ShrekProfile.69d99ef4704cf41520ae.png",
+    "static/media/TerraProfile.png": "/static/media/TerraProfile.66de63cc21054a63948a.png",
+    "static/media/paimonProfile.png": "/static/media/paimonProfile.6507a448564ebb04f6d4.png",
     "static/media/paimon.png": "/static/media/paimon.5cf9816ee30d3fd8949f.png",
+    "static/media/Terra.png": "/static/media/Terra.edae58bc60f8f919f57e.png",
+    "static/media/HarryProfile.png": "/static/media/HarryProfile.a3734b3008d7fb0882e3.png",
+    "static/media/Harry.png": "/static/media/Harry.14d7bf7ed074e3aa9c93.png",
     "static/media/Hamburger_icon.png": "/static/media/Hamburger_icon.976b5194516ca86106ce.png",
     "index.html": "/index.html",
-    "main.ed823d6f.css.map": "/static/css/main.ed823d6f.css.map",
-    "main.f37660f3.js.map": "/static/js/main.f37660f3.js.map",
+    "main.85764437.css.map": "/static/css/main.85764437.css.map",
+    "main.82ddc4f9.js.map": "/static/js/main.82ddc4f9.js.map",
     "787.0451fb7f.chunk.js.map": "/static/js/787.0451fb7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed823d6f.css",
-    "static/js/main.f37660f3.js"
+    "static/css/main.85764437.css",
+    "static/js/main.82ddc4f9.js"
   ]
 }

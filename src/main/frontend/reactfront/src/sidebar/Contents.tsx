@@ -7,7 +7,6 @@ import paimonprofile from "../img/paimonProfile.png"
 import harryprofile from "../img/HarryProfile.png"
 import shrekprofile from "../img/ShrekProfile.png"
 import terraprofile from "../img/TerraProfile.png"
-
 const Contents = () => {
     return(
         <div className="contents">

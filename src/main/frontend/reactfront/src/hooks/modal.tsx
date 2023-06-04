@@ -5,8 +5,14 @@ const Modal = (props: {
     open: any; close: any; header: any; }) => {
     const { open, close, header } =props;
 
+    const handleOutsideClick = (event: React.MouseEvent<HTMLDivElement>) => {
+        if (event.target === event.currentTarget) {
+            close();
+        }
+    };
+
     return (
-        <div className={open ? 'openModal modal' : 'modal'}>
+        <div className={open ? 'openModal modal' : 'modal'} onClick={handleOutsideClick}>
             {open ? (
                 <section>
                     <header>

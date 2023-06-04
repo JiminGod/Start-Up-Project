@@ -62,28 +62,28 @@ const Profilechara = () => {
                 <button className="probutton" onClick={openModal1}><img className="paimon" src={paimon}/></button>
             </div>
             <div className="pro2" {...animatedItem3}>
-                <b>이름 : 페이몬</b><br/>
+                <b>페이몬</b><br/>
                 게임 [원신]
             </div>
             <div className="pro3" {...animatedItem4}>
                 <button className="probutton" onClick={openModal2}><img className="harry" src={harry}/></button>
             </div>
             <div className="pro4" {...animatedItem5}>
-                <b>이름 : 해리 포터</b><br/>
+                <b>해리 포터</b><br/>
                 소설 [해리 포터 시리즈]
             </div>
             <div className="pro5" {...animatedItem6}>
                 <button className="probutton" onClick={openModal3}><img className="shrek" src={shrek}/></button>
             </div>
             <div className="pro6" {...animatedItem7}>
-                <b>이름 : 슈렉</b><br/>
+                <b>슈렉</b><br/>
                 영화 [슈렉 시리즈]
             </div>
             <div className="pro7" {...animatedItem8}>
                 <button className="probutton" onClick={openModal4}><img className="terra" src={terra}/></button>
             </div>
             <div className="pro8" {...animatedItem9}>
-                <b>이름 : 테라</b><br/>
+                <b>테라</b><br/>
                 자체 제작 캐릭터
             </div>
             <Modal open={modalOpen1} close={closeModal1} header="페이몬">
